@@ -12,6 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <form name="tablas" action="/pruebaRepositorio3/servlet" method="POST">
+           Numero: <input type="text" name="numero" size="100" />
+            <input type="hidden" name="tabla" />
+       </form>
     </body>
 </html>
