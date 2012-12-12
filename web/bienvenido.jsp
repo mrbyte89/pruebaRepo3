@@ -19,7 +19,7 @@
     </head>
     <body>
         <h1>Hola, <%=sesion.getAttribute("nombre")%></h1>
-       <a href="/pruebaRepositorio/agenda.jsp">Agenda</a>
+       <a href="/pruebaRepositorio3/agenda.jsp">Agenda</a>
        <br />
        <a href="/pruebaRepositorio/multiplicar.jsp">Multiplicar</a>
     </body>
