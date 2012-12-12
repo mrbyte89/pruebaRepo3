@@ -81,16 +81,20 @@ public class servlet extends HttpServlet {
                         url = "/bienvenido.jsp";
                         sesion.setAttribute("nombre", user);
                     }
+                    break;
                 case "agenda":
                     String nombre = request.getParameter("nombre");
                     url = "/agenda.jsp";
                     
                     String telefono = agenda(nombre);
                     request.setAttribute("resultado", nombre+" : "+telefono);
-
+                    break;
                 case "tablas":
+                    String numero = request.getParameter("numero");
+                    url = "/tablas.jsp";
                     
-                    
+                    String tabla = tabla(numero);
+                    request.setAttribute("resultado", tabla);
             }
         }
 
@@ -128,6 +132,14 @@ public class servlet extends HttpServlet {
         } else {
             return "Nombre no encontrado";
         }
+    }
+    
+    protected String tabla(String n){
+        String resultado = "La tabla del " + n + ": <br />";
+        for(int i=1;i<=10;i++){
+            resultado += n +" x "+ i + " = "+ (Integer.parseInt(n)*i) +"<br />";
+        }
+        return resultado;
     }
 
     /**
