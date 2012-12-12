@@ -18,6 +18,5 @@
             <input type="hidden" name="accion" value="login" />
             <input type="submit" value="Enviar" name="enviar" />
         </form>
-        <h1>Hello World!</h1>
     </body>
 </html>
