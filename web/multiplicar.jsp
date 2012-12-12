@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-       <form name="tablas" action="/pruebaRepositorio3/servlet" method="POST">
+       <form name="tabla" action="/pruebaRepositorio3/servlet" method="POST">
            Numero: <input type="text" name="numero" size="100" />
            <input type="submit" value="Enviar" name="enviar" />
            <input type="hidden" name="accion" value="tablas" />
