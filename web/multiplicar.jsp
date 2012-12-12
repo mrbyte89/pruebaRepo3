@@ -14,7 +14,7 @@
     <body>
        <form name="tablas" action="/pruebaRepositorio3/servlet" method="POST">
            Numero: <input type="text" name="numero" size="100" />
-            <input type="hidden" name="tabla" />
+           <input type="hidden" name="accion" value="tabla" />
        </form>
     </body>
 </html>

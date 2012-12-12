@@ -14,8 +14,7 @@
     <body>
         <form name="agenda" action="/pruebaRepositorio3/servlet" method="POST">
             Nombre: <input type="text" name="nombre" size="100" />
-            <input type="hidden" name="agenda" />
-        
+           <input type="hidden" name="accion" value="nombre" />      
         
         </form>
     </body>
